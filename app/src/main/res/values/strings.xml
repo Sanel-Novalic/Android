@@ -13,4 +13,12 @@
     <string name="celsius">Celsius</string>
     <string name="fahrenheit">Fahrenheit</string>
     <string name="temperature_converter">Temperature converter</string>
+    <string name="onCreateCallback">onCreate Callback\n</string>
+    <string name="onPostCreateCallback">onPostCreate Callback\n</string>
+    <string name="onDestroyCallback">onDestroy Callback\n</string>
+    <string name="onStartCallback">onStart Callback\n</string>
+    <string name="onRestartCallback">onRestart Callback\n</string>
+    <string name="onResumeCallback">onResume Callback\n</string>
+    <string name="onPauseCallback">onPause Callback\n</string>
+    <string name="onStopCallback">onStop Callback\n</string>
 </resources>

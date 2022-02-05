@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button widgets = findViewById(R.id.widgets);
         Button temperature = findViewById(R.id.temperature);
+        Button lifecycle = findViewById(R.id.lifecycle);
         widgets.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,6 +29,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, TemperatureConverterActivity.class));
+            }
+        });
+        lifecycle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, LifecycleActivity.class));
             }
         });
     }
