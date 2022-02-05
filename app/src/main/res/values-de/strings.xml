@@ -34,4 +34,9 @@
     <string name="send_output_2">Send output 2</string>
     <string name="enter_a_number">Enter a number:</string>
     <string name="cancel">Cancel</string>
+    <string name="make_phone_dial">Make phone dial</string>
+    <string name="make_phone_call">Make phone call</string>
+    <string name="open_url_web">Open url web</string>
+    <string name="open_map">Open map</string>
+    <string name="dialNumber">112</string>
 </resources>

@@ -2,6 +2,7 @@ package com.example.tutorial;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,7 +26,10 @@ public class IntentsActivity extends AppCompatActivity {
         Button sendMessageObject = findViewById(R.id.sendMessageObject);
         Button sendOutput1 = findViewById(R.id.sendOutput1);
         Button sendOutput2 = findViewById(R.id.sendOutput2);
-
+        Button makePhoneDial = findViewById(R.id.makePhoneDial);
+        Button makePhoneCall = findViewById(R.id.makePhoneCall);
+        Button openUrlWeb = findViewById(R.id.openUrlWeb);
+        Button openMap = findViewById(R.id.openMap);
         sendMessage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,6 +54,14 @@ public class IntentsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), GetNumberActivity.class);
                 outputResult2.launch(i);
+            }
+        });
+        makePhoneDial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri number = Uri.parse("tel:" + getResources().getString(R.string.dialNumber));
+                Intent i = new Intent(Intent.ACTION_DIAL, number);
+                startActivity(i);
             }
         });
     }

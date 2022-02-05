@@ -46,4 +46,36 @@
         android:layout_marginEnd="20dp"
         android:layout_gravity="center"
         android:text="@string/send_output_2" />
+    <Button
+        android:id="@+id/makePhoneDial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="center"
+        android:text="@string/make_phone_dial" />
+    <Button
+        android:id="@+id/makePhoneCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="center"
+        android:text="@string/make_phone_call" />
+    <Button
+        android:id="@+id/openUrlWeb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="center"
+        android:text="@string/open_url_web" />
+    <Button
+        android:id="@+id/openMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="center"
+        android:text="@string/open_map" />
 </LinearLayout>
