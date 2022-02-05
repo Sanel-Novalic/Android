@@ -39,4 +39,5 @@
     <string name="open_url_web">Open url web</string>
     <string name="open_map">Open map</string>
     <string name="dialNumber">112</string>
+    <string name="androidWeb">https://developer.android.com/</string>
 </resources>

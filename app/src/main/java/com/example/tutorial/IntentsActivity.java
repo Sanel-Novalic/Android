@@ -1,7 +1,10 @@
 package com.example.tutorial;
 
+import android.Manifest;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -12,12 +15,15 @@ import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 public class IntentsActivity extends AppCompatActivity {
     public static final String EXTRA_NUMBER = "com.example.tutorial.IntentsActivity.Number";
-
+    private static final int MY_PERMISSIONS_REQUEST_CALL_PHONE = 1;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +70,49 @@ public class IntentsActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        makePhoneCall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                callPhone();
+            }
+        });
+        openUrlWeb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri webpage = Uri.parse(getResources().getString(R.string.androidWeb));
+                Intent i = new Intent(Intent.ACTION_VIEW, webpage);
+                startActivity(i);
+            }
+        });
+        openMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri geo = Uri.parse("geo:43.7009358,7.2683912");
+                Intent i = new Intent(Intent.ACTION_VIEW, geo);
+                startActivity(i);
+            }
+        });
+    }
+
+    private void callPhone() {
+        int permissionCheck = ContextCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE);
+        if(permissionCheck != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE}, MY_PERMISSIONS_REQUEST_CALL_PHONE);
+        }
+        else{
+            Uri number = Uri.parse("tel:" + getResources().getString(R.string.dialNumber));
+            Intent i = new Intent(Intent.ACTION_CALL, number);
+            startActivity(i);
+        }
+    }
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String permissions[], @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if(requestCode == MY_PERMISSIONS_REQUEST_CALL_PHONE) {
+            if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                callPhone();
+            }
+        }
     }
     ActivityResultLauncher<Intent> outputResult1 = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
