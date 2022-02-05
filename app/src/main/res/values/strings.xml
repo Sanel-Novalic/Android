@@ -30,4 +30,8 @@
     <string name="intents">Intents</string>
     <string name="send_message">Send message</string>
     <string name="send_message_object">Send Message (object)</string>
+    <string name="send_output_1">Send output 1</string>
+    <string name="send_output_2">Send output 2</string>
+    <string name="enter_a_number">Enter a number:</string>
+    <string name="cancel">Cancel</string>
 </resources>
