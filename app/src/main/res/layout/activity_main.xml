@@ -40,6 +40,11 @@
         android:id="@+id/lifecycle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lifecycle" />
+        android:text="@string/lifecycle" />
+    <Button
+        android:id="@+id/intents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/intents" />
 
 </LinearLayout>

@@ -21,4 +21,13 @@
     <string name="onResumeCallback">onResume Callback\n</string>
     <string name="onPauseCallback">onPause Callback\n</string>
     <string name="onStopCallback">onStop Callback\n</string>
+    <string name="enter_a_message">Enter a message:</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+    <string name="send">Send</string>
+    <string name="lifecycle">Lifecycle</string>
+    <string name="message">Message</string>
+    <string name="intents">Intents</string>
+    <string name="send_message">Send message</string>
+    <string name="send_message_object">Send Message (object)</string>
 </resources>

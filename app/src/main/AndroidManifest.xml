@@ -21,6 +21,10 @@
         <activity android:name=".widgets"/>
         <activity android:name=".TemperatureConverterActivity"/>
         <activity android:name=".LifecycleActivity"/>
+        <activity android:name=".SendMessageObjectActivity"/>
+        <activity android:name=".ReceiveMessageActivity"/>
+        <activity android:name=".IntentsActivity"/>
+        <activity android:name=".SendMessageActivity"/>
     </application>
 
 </manifest>
