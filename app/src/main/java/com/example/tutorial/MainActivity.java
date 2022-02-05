@@ -17,10 +17,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button widgets = findViewById(R.id.widgets);
+        Button temperature = findViewById(R.id.temperature);
         widgets.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, widgets.class));
+            }
+        });
+        temperature.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, TemperatureConverterActivity.class));
             }
         });
     }

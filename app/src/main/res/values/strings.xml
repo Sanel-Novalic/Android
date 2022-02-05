@@ -8,4 +8,9 @@
     <string name="blue">Blue</string>
     <string name="vibrate_on">Vibrate on</string>
     <string name="vibrate_off">Vibrate off</string>
+    <string name="temperature">TEMPERATURE</string>
+    <string name="calculate">Calculate</string>
+    <string name="celsius">Celsius</string>
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="temperature_converter">Temperature converter</string>
 </resources>
