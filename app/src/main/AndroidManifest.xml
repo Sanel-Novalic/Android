@@ -32,6 +32,8 @@
         <activity android:name=".FragmentsActivity"/>
         <activity android:name=".FragmentStaticActivity"/>
         <activity android:name=".DialogsActivity"/>
+        <activity android:name=".MenuActivity" android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"/>
+        <activity android:name=".SettingsActivity" android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"/>
     </application>
 
 </manifest>

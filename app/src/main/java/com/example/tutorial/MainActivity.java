@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         Button customAdapter = findViewById(R.id.customAdapter);
         Button fragments = findViewById(R.id.fragments);
         Button dialogs = findViewById(R.id.dialogs);
+        Button menu = findViewById(R.id.menu);
         widgets.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,6 +68,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, DialogsActivity.class));
+            }
+        });
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, MenuActivity.class));
             }
         });
     }
