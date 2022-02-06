@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
         Button fragments = findViewById(R.id.fragments);
         Button dialogs = findViewById(R.id.dialogs);
         Button menu = findViewById(R.id.menu);
+        Button sharedPreferences = findViewById(R.id.sharedPreferences);
+        Button internalStorage = findViewById(R.id.internalStorage);
         widgets.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,6 +76,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, MenuActivity.class));
+            }
+        });
+        sharedPreferences.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SharedPreferencesActivity.class));
+            }
+        });
+        internalStorage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, InternalActivity.class));
             }
         });
     }

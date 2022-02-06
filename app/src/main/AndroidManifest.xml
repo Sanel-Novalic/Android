@@ -34,6 +34,8 @@
         <activity android:name=".DialogsActivity"/>
         <activity android:name=".MenuActivity" android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"/>
         <activity android:name=".SettingsActivity" android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"/>
+        <activity android:name=".SharedPreferencesActivity"/>
+        <activity android:name=".InternalActivity"/>
     </application>
 
 </manifest>
