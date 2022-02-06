@@ -29,6 +29,8 @@
         <activity android:name=".AdaptersActivity"/>
         <activity android:name=".CustomAdaptersActivity"/>
         <activity android:name=".UserActivity"/>
+        <activity android:name=".FragmentsActivity"/>
+        <activity android:name=".FragmentStaticActivity"/>
     </application>
 
 </manifest>

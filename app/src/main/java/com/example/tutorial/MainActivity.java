@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         Button intents = findViewById(R.id.intents);
         Button adapter = findViewById(R.id.adapter);
         Button customAdapter = findViewById(R.id.customAdapter);
+        Button fragments = findViewById(R.id.fragments);
         widgets.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,6 +54,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, CustomAdaptersActivity.class));
+            }
+        });
+        fragments.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, FragmentsActivity.class));
             }
         });
     }

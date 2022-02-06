@@ -43,4 +43,9 @@
     <string name="adapters">Adapters</string>
     <string name="custom_adapter">Custom adapter</string>
     <string name="adapter">Adapter</string>
+    <string name="fragments">Fragments</string>
+    <string name="fragment_1">Fragment #1</string>
+    <string name="fragment_2">Fragment #2</string>
+    <string name="fragment_3">Fragment #3</string>
+    <string name="fragment_static">Fragment static</string>
 </resources>
