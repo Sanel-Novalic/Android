@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         Button sharedPreferences = findViewById(R.id.sharedPreferences);
         Button internalStorage = findViewById(R.id.internalStorage);
         Button data = findViewById(R.id.data);
+        Button json = findViewById(R.id.json);
+        Button http = findViewById(R.id.http);
         widgets.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -95,6 +97,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, SqliteActivity.class));
+            }
+        });
+        json.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, JSONActivity.class));
+            }
+        });
+        http.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, HTTPActivity.class));
             }
         });
     }

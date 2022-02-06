@@ -69,4 +69,9 @@
     <string name="add_new">Add new</string>
     <string name="update_last">Update last</string>
     <string name="delete_first">Delete first</string>
+    <string name="json_raw">JSON Raw</string>
+    <string name="json">JSON</string>
+    <string name="http">HTTP</string>
+    <string name="do_get">Do get</string>
+    <string name="do_post">Do post</string>
 </resources>

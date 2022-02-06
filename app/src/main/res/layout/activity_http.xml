@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/doGet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/do_get" />
+
+    <Button
+        android:id="@+id/doPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/do_post" />
+</LinearLayout>
