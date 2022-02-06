@@ -48,4 +48,8 @@
     <string name="fragment_2">Fragment #2</string>
     <string name="fragment_3">Fragment #3</string>
     <string name="fragment_static">Fragment static</string>
+    <string name="dialogs">Dialogs</string>
+    <string name="pick_time">Pick time</string>
+    <string name="pick_date">Pick date</string>
+    <string name="alert_dialog">Alert dialog</string>
 </resources>
