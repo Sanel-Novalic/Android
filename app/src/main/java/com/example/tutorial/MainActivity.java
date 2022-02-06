@@ -4,11 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
-import android.widget.RadioButton;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
         Button temperature = findViewById(R.id.temperature);
         Button lifecycle = findViewById(R.id.lifecycle);
         Button intents = findViewById(R.id.intents);
+        Button adapter = findViewById(R.id.adapter);
+        Button customAdapter = findViewById(R.id.customAdapter);
         widgets.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,6 +41,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, IntentsActivity.class));
+            }
+        });
+        adapter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, AdaptersActivity.class));
+            }
+        });
+        customAdapter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, CustomAdaptersActivity.class));
             }
         });
     }

@@ -46,5 +46,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/intents" />
+    <Button
+        android:id="@+id/adapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/adapter" />
+    <Button
+        android:id="@+id/customAdapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/custom_adapter" />
 
 </LinearLayout>

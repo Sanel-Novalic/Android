@@ -26,6 +26,9 @@
         <activity android:name=".IntentsActivity"/>
         <activity android:name=".SendMessageActivity"/>
         <activity android:name=".GetNumberActivity"/>
+        <activity android:name=".AdaptersActivity"/>
+        <activity android:name=".CustomAdaptersActivity"/>
+        <activity android:name=".UserActivity"/>
     </application>
 
 </manifest>
