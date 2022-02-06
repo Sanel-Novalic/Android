@@ -65,4 +65,8 @@
     <string name="enter_file_name">Enter file name</string>
     <string name="enter_content">Enter content</string>
     <string name="internal_storage">Internal storage</string>
+    <string name="data">Data</string>
+    <string name="add_new">Add new</string>
+    <string name="update_last">Update last</string>
+    <string name="delete_first">Delete first</string>
 </resources>

@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         Button menu = findViewById(R.id.menu);
         Button sharedPreferences = findViewById(R.id.sharedPreferences);
         Button internalStorage = findViewById(R.id.internalStorage);
+        Button data = findViewById(R.id.data);
         widgets.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -88,6 +89,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, InternalActivity.class));
+            }
+        });
+        data.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SqliteActivity.class));
             }
         });
     }

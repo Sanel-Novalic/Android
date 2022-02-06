@@ -36,6 +36,7 @@
         <activity android:name=".SettingsActivity" android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"/>
         <activity android:name=".SharedPreferencesActivity"/>
         <activity android:name=".InternalActivity"/>
+        <activity android:name=".SqliteActivity"/>
     </application>
 
 </manifest>
